@@ -30,6 +30,7 @@ class Analytics:
         transfers = self.clean_data(transfers)
         transactions = self.clean_data(transactions)
 
+
         # Получаем базовую информацию о клиенте
         name = transfers["name"].iloc[0] if not transfers.empty else transactions["name"].iloc[0]
         city = transfers["city"].iloc[0] if not transfers.empty else transactions["city"].iloc[0]
